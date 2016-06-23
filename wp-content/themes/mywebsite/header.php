@@ -6,10 +6,10 @@
         <?php wp_head(); ?>
     </head>
     <?php
-    if (is_home()):
+    if (is_front_page()):
         $mywebsite_classes = array('mywebsite-class', 'my-class');
     else:
-        $mywebsie_classes = array('Not-mywebsite-class');
+        $mywebsie_classes = array('no-mywebsite-class');
     endif;
     ?>
     <body class="<?php body_class($mywebsite_classes); ?>">
